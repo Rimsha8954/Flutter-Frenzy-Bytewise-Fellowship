@@ -289,5 +289,39 @@ void main(){
 }
 
 
+
+class vehicle{
+  
+  String model;
+  int year;
+  
+  vehicle(this.model , this.year){
+    print(this.model);
+    print(this.year);
+  }
+  
+  void showOutput(){
+    print(model);
+    print(year);
+  }
+}
+
+class car extends vehicle{
+  
+  double price;
+  
+  car(String model, int year, this.price) : super(model,year);
+  
+  void showOutput(){
+    
+    super.showOutput();
+    print(price);
+  }
+}
+
+void main(){
+  var car1 = car('TOYOTA',2015,7500000);
+  car1.showOutput();
+}
  */
 }
