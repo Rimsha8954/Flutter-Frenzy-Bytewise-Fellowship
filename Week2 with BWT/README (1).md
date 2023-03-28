@@ -27,7 +27,7 @@ flutter doctor
 ```
 Then check all the requirements for whole setup and install all that programs that are Compulsory to finish the flutter setup
 
-
+![Screenshot_1](https://user-images.githubusercontent.com/95737611/228321241-b07b8911-3e6c-432f-8d9d-64575656639d.png)
 
 
 ## First Flutter App
