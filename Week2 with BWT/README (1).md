@@ -40,6 +40,7 @@ To launch the project there are following requirements:
 
 In this project I learned about the basics of flutter, like how to create layout, how to orhanize your code and how to make your app responsive.
 
-
+![Screenshot_2](https://user-images.githubusercontent.com/95737611/228323375-f4f82d21-a79b-46d3-b188-1c70c5470c16.png)
+![Screenshot_3](https://user-images.githubusercontent.com/95737611/228323409-3030ce6f-27be-4579-bd7e-8802c271ca20.png)
 
 
