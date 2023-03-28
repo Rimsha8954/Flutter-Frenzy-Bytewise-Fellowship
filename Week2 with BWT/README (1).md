@@ -9,7 +9,6 @@ Flutter is quickly gaining popularity among mobile app developers, and there are
 
 
 
-
 ## Flutter Installation
 
 For flutter Installation window 10 should be installed in your system. Your RAM should be 8GB or above. You should have atleast i7 generation laptop/PC otherwise your system will be slow down.
