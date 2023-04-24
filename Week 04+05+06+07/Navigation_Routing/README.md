@@ -1,16 +1,75 @@
-# navigation_routing
 
-A new Flutter project.
+# Navigation
 
-## Getting Started
+This project shows how to use Flutter's navigational features, such as data passing and routing between screens.
 
-This project is a starting point for a Flutter application.
+## Navigation Methods
 
-A few resources to get you started if this is your first Flutter project:
+### Named Routes
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+By providing a distinctive string identification for each screen, named routes make switching between screens simple. For larger apps with more complicated navigation, this approach is advised.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+To define a named route, add it to the routes map in the MaterialApp widget:
+
+
+
+
+```bash
+  MaterialApp(
+  routes: {
+    '/': (context) => HomePage(),
+    '/details': (context) => DetailsPage(),
+  },
+);
+```
+
+To navigate to a named route, use the Navigator.pushNamed() method:
+
+```bash
+Navigator.pushNamed(context, '/details');
+```
+
+### MaterialPageRoute
+
+The MaterialPageRoute class generates a new screen and switches to it with an animation similar to material design. This approach is suggested for simple apps with a limited number of screens.
+
+To navigate to a new screen, create a new MaterialPageRoute object and pass it to the Navigator.push() method:
+
+```bash
+Navigator.push(
+  context,
+  MaterialPageRoute(builder: (context) => DetailsPage()),
+);
+```
+
+### Passing Data
+
+To pass data between screens, simply add it as an argument to the Navigator.push() or Navigator.pushNamed() method:
+
+```bash
+Navigator.pushNamed(
+  context,
+  '/details',
+  arguments: 'Hello, world!',
+);
+```
+To retrieve the data on the other screen, use the ModalRoute.of(context).settings.arguments property:
+
+```bash
+class DetailsPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final String data = ModalRoute.of(context).settings.arguments;
+
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Details Page'),
+      ),
+      body: Center(
+        child: Text(data),
+      ),
+    );
+  }
+}
+```
+
