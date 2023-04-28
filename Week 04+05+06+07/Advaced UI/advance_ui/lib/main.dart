@@ -109,5 +109,20 @@ double _initialScale = 1.0;
 //             });
 //           }
 //         },
+//          onVerticalDragUpdate: (details){
+//          
+//           if(details.delta.dx>0){
+//             setState(() {
+//               color =  Colors.grey;
+//               text = "Top";
+//             });
+//           }
+//           else{
+//             setState(() {
+//               color =  Colors.green;
+//               text = "Bottom";
+//             });
+//           }
+//         },
 //       )
 //   ),
