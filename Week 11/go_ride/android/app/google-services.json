@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "715589596272",
+    "project_id": "go-ride-clone",
+    "storage_bucket": "go-ride-clone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715589596272:android:cd1dcdbf189b53da1d70b5",
+        "android_client_info": {
+          "package_name": "com.rimsha.goride"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvAQeBnfkgtcgrV-xi4_2wXgqfEUZNEQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
